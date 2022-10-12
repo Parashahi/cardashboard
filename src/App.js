@@ -1,10 +1,13 @@
 import "./App.scss";
-import Navbar from "./components/common/Navbar";
+import HomeMain from "./components/common/HomeMain";
+import TopNav from "./components/common/TopNav";
 
 function App() {
   return (
     <>
-      <Navbar />
+      <TopNav />
+
+      <HomeMain />
     </>
   );
 }

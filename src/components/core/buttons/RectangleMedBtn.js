@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "@emotion/styled";
 
-function RectangleMedBtn() {
+function RectangleMedBtn(props) {
   const Button = styled.button`
     height: 34px;
     font-size: 14px;
