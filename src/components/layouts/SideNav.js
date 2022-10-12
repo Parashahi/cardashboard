@@ -25,22 +25,22 @@ function SideNav() {
           <div className="MenuItems">
             <MenuItem icon={icon.HomeIcon} name="Dashboard" />
             <p>ANALYTICS</p>
-            <MenuItem icon={icon.HomeIcon} name="Dashboard" />
-            <MenuItem icon={icon.HomeIcon} name="Dashboard" />
-            <p>ANALYTICS</p>
-            <MenuItem icon={icon.HomeIcon} name="Dashboard" />
-            <MenuItem icon={icon.HomeIcon} name="Dashboard" />
-            <MenuItem icon={icon.HomeIcon} name="Dashboard" />
-            <p>ANALYTICS</p>
-            <MenuItem icon={icon.HomeIcon} name="Dashboard" />
-            <MenuItem icon={icon.HomeIcon} name="Dashboard" />
-            <MenuItem icon={icon.HomeIcon} name="Dashboard" />
+            <MenuItem icon={icon.BarGraphIcon} name="Performance" />
+            <MenuItem icon={icon.PointerIcon} name="Hotjar" />
+            <p>SUPPORT</p>
+            <MenuItem icon={icon.TicketIcon} name="Tickets" />
+            <MenuItem icon={icon.PersonIcon} name="Agents" />
+            <MenuItem icon={icon.DoublePersonIcon} name="Customers" />
+            <p>SHOP</p>
+            <MenuItem icon={icon.FolderIcon} name="Products" />
+            <MenuItem icon={icon.BellIcon} name="Orders" />
+            <MenuItem icon={icon.ReportIcon} name="Reports" />
           </div>
         </div>
 
         <div className="LowerMenu">
-          <MenuItem icon={icon.HomeIcon} name="Dashboard" />
-          <MenuItem icon={icon.HomeIcon} name="Dashboard" />
+          <MenuItem icon={icon.SettingIcon} name="Settings" />
+          <MenuItem icon={icon.LogoutIcon} name="Logout" />
         </div>
       </div>
     </section>
