@@ -1,7 +1,6 @@
 import React from "react";
 
 //Material UI
-import Stack from "@mui/material/Stack";
 import { Badge } from "@mui/material";
 import Avatar from "@mui/material/Avatar";
 
@@ -22,19 +21,19 @@ function Navbar() {
       </div>
 
       <div className="searchbar">
-        <input placeholder="Type to search" />
+        <input placeholder="Type to Search" />
       </div>
 
       <div className="profile">
-        <Stack direction="row" spacing={2}>
-          <Badge className="mail" badgeContent={2} color="primary">
-            <i>{icon.MailIcon}</i>
-          </Badge>
+        <Badge className="badge" badgeContent={2} color="primary">
+          <i className="mail">{icon.MailIcon}</i>
+        </Badge>
 
+        <Badge className="badge" badgeContent={0} color="primary">
           <i className="bell">{icon.BellIcon}</i>
+        </Badge>
 
-          <Avatar sx={{ width: 30, height: 30 }} />
-        </Stack>
+        <Avatar sx={{ width: 30, height: 30 }} />
       </div>
     </div>
   );

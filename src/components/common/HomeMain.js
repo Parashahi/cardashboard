@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+
+//Layouts
 import HomeMainContent from "../layouts/HomeMainContent";
 import SideNav from "../layouts/SideNav";
 

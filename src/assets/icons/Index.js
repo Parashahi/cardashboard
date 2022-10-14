@@ -5,18 +5,18 @@ import {
   AiOutlineArrowDown,
 } from "react-icons/ai";
 import { CgSearch } from "react-icons/cg";
-import { FiMail } from "react-icons/fi";
-import { HiOutlineBell } from "react-icons/hi";
+import { HiOutlineBell, HiOutlineMail } from "react-icons/hi";
 import { VscGraph } from "react-icons/vsc";
 import { BiPointer } from "react-icons/bi";
 import { TiTicket } from "react-icons/ti";
 import { BsPerson, BsPeople, BsFolder } from "react-icons/bs";
 import { TbReportSearch, TbSettings, TbLogout } from "react-icons/tb";
+// import { FaSearch } from "react-icons/fa";
 
 const Icons = {
   SearchIcon: <CgSearch />,
   BellIcon: <HiOutlineBell />,
-  MailIcon: <FiMail />,
+  MailIcon: <HiOutlineMail />,
   PlusIcon: <AiOutlinePlus />,
   HomeIcon: <AiOutlineHome />,
   BarGraphIcon: <VscGraph />,

@@ -9,6 +9,12 @@ import icon from "../../assets/icons/Index";
 //Style
 import "./HomeMainConStyle.scss";
 
+//components
+import TrafficPaper from "../core/TrafficPaper";
+import SaleReportPaper from "../core/SaleReportPaper";
+import CustomerPaper from "../core/CustomerPaper";
+import TransactionPaper from "../core/TransactionPaper";
+
 function HomeMainContent() {
   return (
     <section className="MainContent">
@@ -30,7 +36,7 @@ function HomeMainContent() {
           <TodayDetailsPaper
             title="TOTAL SALES"
             amnt="$120,000"
-            num="+3.25%"
+            num="-3.25%"
             numIcon={icon.DownArrowIcon}
             color="red"
           />
@@ -46,11 +52,21 @@ function HomeMainContent() {
           <TodayDetailsPaper
             title="TOTAL CUSTOMERS"
             amnt="$33,889"
-            num="+3.25%"
+            num="-3.25%"
             numIcon={icon.DownArrowIcon}
             color="red"
           />
         </div>
+      </div>
+
+      <div className="MidSection">
+        <SaleReportPaper />
+        <TrafficPaper />
+      </div>
+
+      <div className="LastSection">
+        <TransactionPaper />
+        <CustomerPaper />
       </div>
     </section>
   );
