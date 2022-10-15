@@ -3,7 +3,7 @@ import React from "react";
 
 function RectangleBigBtn(props) {
   const Button = styled.button`
-    height: 40px;
+    height: 36px;
     width: 100%;
     font-size: 14px;
     font-weight: 600;
@@ -16,7 +16,7 @@ function RectangleBigBtn(props) {
     cursor: pointer;
 
     span {
-      padding: 2px 5px 0 0;
+      padding: 1px 5px 0 0;
     }
 
     &:hover {

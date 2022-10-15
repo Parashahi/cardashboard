@@ -4,7 +4,7 @@ import styled from "styled-components";
 function RectangleMedBtn(props) {
   const Button = styled.button`
     font-size: 12px;
-    padding: 5px;
+    padding: 5px 5px 4px;
     border-radius: 5px;
     border: 1px solid grey;
     background: ${props.bgColor};
@@ -12,7 +12,7 @@ function RectangleMedBtn(props) {
     display: flex;
 
     svg {
-      padding: 2px 3px 0 0;
+      padding: 0px 3px 0 0;
     }
   `;
   return (

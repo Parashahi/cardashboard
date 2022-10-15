@@ -6,7 +6,9 @@ import RectangleMedBtn from "./buttons/RectangleMedBtn";
 
 //Icon
 import icon from "../../assets/icons/Index";
-import { Chart } from "react-chartjs-2";
+
+//Image
+import img from "../../assets/images/Index";
 
 function SaleReportPaper() {
   const SalesReport = styled.div`
@@ -28,28 +30,34 @@ function SaleReportPaper() {
 
       // .radioGroup {
       .radioBtn {
-        // border: 1px solid;
-        // margin: 0 5px;
+        margin: 0 2px;
         border-radius: 5px;
         position: relative;
         text-align: center;
         font-size: 12px;
         font-weight: 600;
+        color: grey;
 
         input {
           opacity: 0;
           width: 70px;
-          padding: 5px 0;
+
+          &:hover + .selected {
+            border: 1px solid lightgrey;
+            border-radius: 5px;
+            top: -1px;
+          }
 
           &:checked + .selected {
             border: 1px solid lightgrey;
             border-radius: 5px;
             top: -1px;
+            color: black;
           }
         }
         .selected {
           box-sizing: border-box;
-          padding: 5px 0;
+          padding: 5px 0 4px;
           width: 100%;
           position: absolute;
           left: 0;
@@ -60,7 +68,15 @@ function SaleReportPaper() {
 
       button {
         font-weight: 600;
-        margin-left: 45px;
+        margin-left: 40px;
+      }
+    }
+
+    .chart {
+      width: 100%;
+      img {
+        width: 565px;
+        height: 200px;
       }
     }
   `;
@@ -98,8 +114,9 @@ function SaleReportPaper() {
         />
       </div>
 
-      <div className="">
-        <Chart
+      <div className="chart">
+        <img src={img.ChartImg} alt="" />
+        {/* <Chart
           type="line"
           data={{
             labels: ["sjajd", "oaniod", "aoindn", "sinad"],
@@ -161,7 +178,7 @@ function SaleReportPaper() {
               },
             },
           }}
-        />
+        /> */}
       </div>
     </SalesReport>
   );

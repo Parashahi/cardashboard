@@ -3,15 +3,13 @@ import styled from "styled-components";
 
 //Chart
 import "chart.js/auto";
-import { Bar } from "react-chartjs-2";
-import { BiNoEntry } from "react-icons/bi";
 
 function TrafficPaper() {
   const TrafficPaper = styled.div`
     border-radius: 5px;
     border: 1px solid lightgrey;
     padding: 15px 15px 25px;
-    width: 33%;
+    width: 30%;
 
     .head {
       margin-bottom: 10px;
@@ -34,7 +32,7 @@ function TrafficPaper() {
     }
     .barTitle {
       font-size: 14px;
-      font-weight: 600;
+      font-weight: 400;
       padding: 20px 0 10px;
       display: flex;
       justify-content: space-between;

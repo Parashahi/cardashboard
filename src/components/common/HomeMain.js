@@ -11,7 +11,7 @@ function HomeMain() {
 
     .HomeMain {
       display: flex;
-      gap: 50px;
+      gap: 40px;
     }
   `;
   return (
@@ -19,6 +19,7 @@ function HomeMain() {
       <div className="container">
         <div className="HomeMain">
           <SideNav />
+
           <HomeMainContent />
         </div>
       </div>

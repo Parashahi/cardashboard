@@ -10,9 +10,10 @@ function MenuItem(props) {
     display: flex;
     margin: 5px 0;
     cursor: pointer;
+    font-size: 14px;
 
     span {
-      padding: 2px 15px 0 0;
+      padding: 1px 15px 0 10px;
     }
 
     &:hover {
