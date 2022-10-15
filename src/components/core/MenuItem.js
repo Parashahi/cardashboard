@@ -5,12 +5,12 @@ function MenuItem(props) {
   const ItemBtn = styled.a`
     color: black;
     background: transparent;
-    padding: 5px 10px;
+    padding: 6px 10px 4px;
     border-radius: 10px;
     display: flex;
     margin: 5px 0;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 12px;
 
     span {
       padding: 1px 15px 0 10px;

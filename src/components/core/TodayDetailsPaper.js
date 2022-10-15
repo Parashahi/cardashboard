@@ -21,6 +21,13 @@ function TodayDetailsPaper(props) {
       display: flex;
       justify-content: space-between;
 
+      p {
+        font-size: 14px;
+        font-weight: 700;
+        color: black;
+        padding: 6px 0 0;
+      }
+
       span {
         color: ${props.color};
         padding: 8px 0 0 0;
@@ -34,7 +41,7 @@ function TodayDetailsPaper(props) {
         <p>{props.title}</p>
       </div>
       <div className="bodypart">
-        <h1>{props.amnt}</h1>
+        <p>{props.amnt}</p>
         <span>
           {props.num} <i>{props.numIcon}</i>
         </span>

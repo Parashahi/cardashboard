@@ -1,14 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 
-//Chart
-import "chart.js/auto";
-
 function TrafficPaper() {
   const TrafficPaper = styled.div`
+    background: white;
     border-radius: 5px;
     border: 1px solid lightgrey;
-    padding: 15px 15px 25px;
+    padding: 20px;
     width: 30%;
 
     .head {
@@ -17,10 +15,11 @@ function TrafficPaper() {
       justify-content: space-between;
 
       h1 {
-        font-size: 14px;
+        font-size: 13px;
       }
 
       select {
+        font-size: 10px;
         outline: none;
         border: none;
         background: transparent;
@@ -31,7 +30,7 @@ function TrafficPaper() {
       }
     }
     .barTitle {
-      font-size: 14px;
+      font-size: 10px;
       font-weight: 400;
       padding: 20px 0 10px;
       display: flex;

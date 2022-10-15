@@ -3,16 +3,16 @@ import styled from "styled-components";
 
 function RectangleMedBtn(props) {
   const Button = styled.button`
-    font-size: 12px;
-    padding: 5px 5px 4px;
+    padding: 6px 5px 5px;
     border-radius: 5px;
     border: 1px solid grey;
     background: ${props.bgColor};
     color: ${props.color};
     display: flex;
+    cursor: pointer;
 
     svg {
-      padding: 0px 3px 0 0;
+      padding: 1px 3px 0 0;
     }
   `;
   return (
