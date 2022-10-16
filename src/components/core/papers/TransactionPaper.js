@@ -1,12 +1,12 @@
 import React from "react";
-import styled from "styled-components";
+import styledComponents from "styled-components";
 
 //icons
 import icon from "../../../assets/icons/Index";
 import TransactionOptions from "../TransactionOptions";
 
 function TransactionPaper() {
-  const TransactionPaper = styled.div`
+  const TransactionPaper = styledComponents.div`
     background: white;
     border: 1px solid lightgrey;
     border-radius: 5px;
@@ -21,13 +21,13 @@ function TransactionPaper() {
       p {
         color: black;
         font-weight: 600;
-        font-size: 13px;
+        font-size: 16px;
         display: flex;
         flex-direction: column;
 
         .grey {
           padding: 5px 0 0;
-          font-size: 11px;
+          font-size: 13px;
           color: grey;
           font-weight: 100;
         }
@@ -37,7 +37,7 @@ function TransactionPaper() {
         text-transform: capitalize;
         color: #4f46e5;
         cursor: pointer;
-        font-size: 10px;
+        font-size: 11px;
         border: none;
         background: transparent;
         display: flex;
@@ -47,8 +47,8 @@ function TransactionPaper() {
         }
 
         svg {
-          font-size: 12px;
-          padding: 0 0 0 5px;
+          font-size: 13px;
+          padding: 3px 0 0 5px;
         }
       }
     }

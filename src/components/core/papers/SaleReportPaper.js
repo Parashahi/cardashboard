@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styledComponents from "styled-components";
 
 //Component
 import RectangleMedBtn from "../buttons/RectangleMedBtn";
@@ -11,7 +11,7 @@ import icon from "../../../assets/icons/Index";
 import img from "../../../assets/images/Index";
 
 function SaleReportPaper() {
-  const SalesReport = styled.div`
+  const SalesReport = styledComponents.div`
     background: white;
     border: 1px solid lightgrey;
     border-radius: 5px;
@@ -27,7 +27,7 @@ function SaleReportPaper() {
 
       p {
         font-weight: bold;
-        font-size: 13px;
+        font-size: 16px;
         ${"" /* padding: 5px 20px 0 0; */}
       }
       .radioGroup {
@@ -40,7 +40,7 @@ function SaleReportPaper() {
           height: inherit;
           position: relative;
           text-align: center;
-          font-size: 10px;
+          font-size: 11px;
           font-weight: 600;
           color: grey;
 
@@ -76,7 +76,7 @@ function SaleReportPaper() {
       }
 
       button {
-        font-size: 10px;
+        font-size: 11px;
         font-weight: 600;
       }
     }
@@ -87,21 +87,21 @@ function SaleReportPaper() {
 
       .lines {
         width: 100%;
-        margin: 30px 0;
+        margin: 32px 0 0px;
         height: 1px;
         background: lightgrey;
       }
 
       img {
         position: absolute;
-        top: -30px;
+        top: -27px;
         width: 100%;
         height: 160px;
       }
 
       ul {
-        padding: 20px 0 0;
-        font-size: 10px;
+        margin: 8px 0;
+        font-size: 11px;
         color: grey;
         display: flex;
         justify-content: space-between;
@@ -145,6 +145,7 @@ function SaleReportPaper() {
       </div>
 
       <div className="chart">
+        <div className="lines"></div>
         <div className="lines"></div>
         <div className="lines"></div>
         <div className="lines"></div>

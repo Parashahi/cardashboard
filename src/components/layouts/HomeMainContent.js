@@ -43,7 +43,7 @@ function HomeMainContent() {
 
           <TodayDetailsPaper
             title="TOTAL ORDERS"
-            amnt="$84,233"
+            amnt="84,233"
             num="+3.25%"
             numIcon={icon.UpArrowIcon}
             color="#3AF90B"
@@ -51,7 +51,7 @@ function HomeMainContent() {
 
           <TodayDetailsPaper
             title="TOTAL CUSTOMERS"
-            amnt="$33,889"
+            amnt="33,889"
             num="-3.25%"
             numIcon={icon.DownArrowIcon}
             color="red"

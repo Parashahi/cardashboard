@@ -1,8 +1,8 @@
 import React from "react";
-import styled from "styled-components";
+import styledComponents from "styled-components";
 
 function RectangleMedBtn(props) {
-  const Button = styled.button`
+  const Button = styledComponents.button`
     padding: 6px 5px 5px;
     border-radius: 5px;
     border: 1px solid grey;

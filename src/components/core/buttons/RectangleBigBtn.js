@@ -1,23 +1,22 @@
-import styled from "styled-components";
+import styledComponents from "styled-components";
 import React from "react";
 
 function RectangleBigBtn(props) {
-  const Button = styled.button`
+  const Button = styledComponents.button`
     ${"" /* height: 36px; */}
     width: 100%;
     font-size: 12px;
     font-weight: 600;
-    padding: 12px 25px 10px;
+    padding: 12px 0;
     border: none;
     border-radius: 10px;
     background: ${props.bgcolor};
     color: ${props.color};
     display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
     cursor: pointer;
-
-    span {
-      padding: 1px 5px 0 0;
-    }
 
     &:hover {
       background: blue;
@@ -25,7 +24,7 @@ function RectangleBigBtn(props) {
   `;
   return (
     <Button>
-      <span>{props.icon}</span>
+      {props.icon}
       {props.name}
     </Button>
   );

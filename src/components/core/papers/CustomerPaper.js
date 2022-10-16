@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styledComponents from "styled-components";
 
 //components
 import ProfileCustomer from "../../core/ProfileCustomer";
@@ -8,7 +8,7 @@ import ProfileCustomer from "../../core/ProfileCustomer";
 import icon from "../../../assets/icons/Index";
 
 function CustomerPaper() {
-  const CustomerPaper = styled.div`
+  const CustomerPaper = styledComponents.div`
     background: white;
     border: 1px solid lightgrey;
     border-radius: 5px;
@@ -16,12 +16,12 @@ function CustomerPaper() {
     width: 30%;
 
     .title {
-      font-size: 13px;
+      font-size: 16px;
       font-weight: 600;
     }
 
     .titleText {
-      font-size: 11px;
+      font-size: 13px;
       color: grey;
       padding: 5px 0 20px;
     }
@@ -42,7 +42,7 @@ function CustomerPaper() {
       }
 
       span {
-        padding: 2px 0 0;
+        padding: 1px 0 0;
       }
 
       svg {

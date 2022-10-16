@@ -10,13 +10,17 @@ function ProfileCustomer(props) {
         display: flex;
         gap: 10px;
         width: 100%;
-        font-size: 10px;
+        font-size: 11px;
         cursor: pointer;
         padding: 10px 0;
 
         .grey{
             padding: 4px 0 0;
             color: grey;
+        }
+        
+        .black{
+          font-weight: 600;
         }
 
         .fullDetails{
@@ -37,11 +41,11 @@ function ProfileCustomer(props) {
       <Avatar sx={{ height: 30, width: 30 }} />
       <div className="fullDetails">
         <div className="info">
-          <p>{props.fullName}</p>
+          <p className="black">{props.fullName}</p>
           <p className="grey">{props.email}</p>
         </div>
         <div className="price">
-          <p>{props.amnt}</p>
+          <p className="black">{props.amnt}</p>
           <p className="grey">{props.fname}</p>
         </div>
       </div>

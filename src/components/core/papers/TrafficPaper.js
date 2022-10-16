@@ -1,8 +1,8 @@
 import React from "react";
-import styled from "styled-components";
+import styledComponents from "styled-components";
 
 function TrafficPaper() {
-  const TrafficPaper = styled.div`
+  const TrafficPaper = styledComponents.div`
     background: white;
     border-radius: 5px;
     border: 1px solid lightgrey;
@@ -10,16 +10,16 @@ function TrafficPaper() {
     width: 30%;
 
     .head {
-      margin-bottom: 10px;
+      margin-bottom: 5px;
       display: flex;
       justify-content: space-between;
 
       h1 {
-        font-size: 13px;
+        font-size: 16px;
       }
 
       select {
-        font-size: 10px;
+        font-size: 12px;
         outline: none;
         border: none;
         background: transparent;
@@ -30,7 +30,7 @@ function TrafficPaper() {
       }
     }
     .barTitle {
-      font-size: 10px;
+      font-size: 11px;
       font-weight: 400;
       padding: 20px 0 10px;
       display: flex;

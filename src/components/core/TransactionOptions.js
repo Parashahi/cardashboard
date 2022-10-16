@@ -16,9 +16,9 @@ function TransactionOptions(props) {
     font-size: 11px;
     text-transform: capitalize;
 
-    &:hover{
-        border-top: 0.5px solid lightgrey;
-    }
+    // &:hover{
+    //     border-top: 0.5px solid lightgrey;
+    // }
 
     span{
         font-weight: 600;

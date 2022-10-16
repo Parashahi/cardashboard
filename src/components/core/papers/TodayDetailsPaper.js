@@ -1,17 +1,17 @@
 import React from "react";
-import styled from "styled-components";
+import styledComponents from "styled-components";
 
 function TodayDetailsPaper(props) {
-  const TodayPaper = styled.div`
+  const TodayPaper = styledComponents.div`
     border: 1px solid lightgrey;
     border-radius: 6px;
-    width: 220px;
+    width: 230px;
     background: white;
     padding: 15px;
 
     .head {
       p {
-        font-size: 10px;
+        font-size: 11px;
         color: grey;
       }
     }
@@ -22,7 +22,7 @@ function TodayDetailsPaper(props) {
       justify-content: space-between;
 
       p {
-        font-size: 16px;
+        font-size: 21px;
         font-weight: 700;
         color: black;
         padding: 6px 0 0;
@@ -30,8 +30,8 @@ function TodayDetailsPaper(props) {
 
       span {
         color: ${props.color};
-        padding: 8px 0 0 0;
-        font-size: 12px;
+        padding: 14px 0 0 0;
+        font-size: 13px;
       }
     }
   `;

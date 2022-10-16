@@ -1,12 +1,12 @@
 import React from "react";
-import styled from "styled-components";
+import styledComponents from "styled-components";
 
 //Layouts
 import HomeMainContent from "../layouts/HomeMainContent";
 import SideNav from "../layouts/SideNav";
 
 function HomeMain() {
-  const Home = styled.section`
+  const Home = styledComponents.section`
     background: #fafafa;
     width: 100%;
 
