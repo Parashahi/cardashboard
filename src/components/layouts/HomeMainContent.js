@@ -1,7 +1,7 @@
 import React from "react";
 
 //Component
-import TodayDetailsPaper from "../core/TodayDetailsPaper";
+import TodayDetailsPaper from "../core/papers/TodayDetailsPaper";
 
 //Icon
 import icon from "../../assets/icons/Index";
@@ -10,10 +10,10 @@ import icon from "../../assets/icons/Index";
 import "./HomeMainConStyle.scss";
 
 //components
-import TrafficPaper from "../core/TrafficPaper";
-import SaleReportPaper from "../core/SaleReportPaper";
-import CustomerPaper from "../core/CustomerPaper";
-import TransactionPaper from "../core/TransactionPaper";
+import TrafficPaper from "../core/papers/TrafficPaper";
+import SaleReportPaper from "../core/papers/SaleReportPaper";
+import CustomerPaper from "../core/papers/CustomerPaper";
+import TransactionPaper from "../core/papers/TransactionPaper";
 
 function HomeMainContent() {
   return (

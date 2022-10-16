@@ -8,6 +8,7 @@ import SideNav from "../layouts/SideNav";
 function HomeMain() {
   const Home = styled.section`
     background: #fafafa;
+    width: 100%;
 
     .HomeMain {
       display: flex;

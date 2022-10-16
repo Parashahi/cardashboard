@@ -1,12 +1,13 @@
 @import "../../App.scss";
 
 .MainContent{
-    margin: 25px 0;
+    margin: 30px 0;
+    width: 85%;
 
     .TodaysDetails{
     
         p{
-            font-size: 16px;
+            font-size: 14px;
             color: grey;
 
             span{
@@ -18,11 +19,12 @@
         .PapersMain{
             margin: 30px 0;
             display: flex;
-            gap: 20px;
+            justify-content: space-between;
         }
     }
 
     .MidSection{
+        height: 260px;
         margin: 30px 0;
         display: flex;
         gap: 30px;

@@ -8,10 +8,11 @@ $secondary: #fafafa;
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .container{
-    width: 1180px;
+    width: 1200px;
     margin: 0 auto;
 }
