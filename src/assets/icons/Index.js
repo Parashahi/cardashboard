@@ -11,7 +11,7 @@ import { BiPointer } from "react-icons/bi";
 import { TiTicket } from "react-icons/ti";
 import { BsPerson, BsPeople, BsFolder } from "react-icons/bs";
 import { TbReportSearch, TbSettings, TbLogout } from "react-icons/tb";
-// import { FaSearch } from "react-icons/fa";
+import { MdArrowForwardIos } from "react-icons/md";
 
 const Icons = {
   SearchIcon: <CgSearch />,
@@ -30,6 +30,7 @@ const Icons = {
   LogoutIcon: <TbLogout />,
   UpArrowIcon: <AiOutlineArrowUp />,
   DownArrowIcon: <AiOutlineArrowDown />,
+  RightArrowIcon: <MdArrowForwardIos />,
 };
 
 export default Icons;

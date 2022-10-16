@@ -5,7 +5,7 @@ function TodayDetailsPaper(props) {
   const TodayPaper = styled.div`
     border: 1px solid lightgrey;
     border-radius: 6px;
-    width: 185px;
+    width: 220px;
     background: white;
     padding: 15px;
 
@@ -22,7 +22,7 @@ function TodayDetailsPaper(props) {
       justify-content: space-between;
 
       p {
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 700;
         color: black;
         padding: 6px 0 0;

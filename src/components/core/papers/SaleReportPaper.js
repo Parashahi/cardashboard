@@ -2,13 +2,13 @@ import React from "react";
 import styled from "styled-components";
 
 //Component
-import RectangleMedBtn from "./buttons/RectangleMedBtn";
+import RectangleMedBtn from "../buttons/RectangleMedBtn";
 
 //Icon
-import icon from "../../assets/icons/Index";
+import icon from "../../../assets/icons/Index";
 
 //Image
-import img from "../../assets/images/Index";
+import img from "../../../assets/images/Index";
 
 function SaleReportPaper() {
   const SalesReport = styled.div`
@@ -43,7 +43,6 @@ function SaleReportPaper() {
           font-size: 10px;
           font-weight: 600;
           color: grey;
-          box-sizing: border-box;
 
           input {
             opacity: 0;
@@ -52,10 +51,9 @@ function SaleReportPaper() {
 
             &:hover + .selected {
               border: 1px solid lightgrey;
-              box-sizing: border-box;
               border-radius: 5px;
               padding: 6px 0 5px;
-              top: -1px;
+              top: 0px;
               left: 0;
             }
 
@@ -63,17 +61,16 @@ function SaleReportPaper() {
               border: 1px solid lightgrey;
               border-radius: 5px;
               padding: 6px 0 5px;
-              top: -1px;
+              top: 0px;
               color: black;
             }
           }
           .selected {
-            box-sizing: border-box;
             padding: 6px 0 5px;
             width: 100%;
             position: absolute;
             left: 0;
-            top: 0px;
+            top: 1px;
           }
         }
       }
@@ -104,7 +101,7 @@ function SaleReportPaper() {
 
       ul {
         padding: 20px 0 0;
-        font-size: 12px;
+        font-size: 10px;
         color: grey;
         display: flex;
         justify-content: space-between;

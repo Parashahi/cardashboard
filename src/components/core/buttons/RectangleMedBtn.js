@@ -11,14 +11,14 @@ function RectangleMedBtn(props) {
     display: flex;
     cursor: pointer;
 
-    svg {
+    span {
       padding: 1px 3px 0 0;
     }
   `;
   return (
     <Button>
-      {props.icon}
-      <span>{props.name}</span>
+      <span>{props.icon}</span>
+      {props.name}
     </Button>
   );
 }
