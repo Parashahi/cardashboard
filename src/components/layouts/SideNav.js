@@ -10,6 +10,10 @@ import RectangleBigBtn from "../core/buttons/RectangleBigBtn";
 //Icons
 import icon from "../../assets/icons/Index";
 
+//Material UI
+import { Badge } from "@mui/material";
+import Avatar from "@mui/material/Avatar";
+
 function SideNav() {
   return (
     <section className="sideNav">
@@ -20,6 +24,18 @@ function SideNav() {
           name="Connect New Account"
           icon={icon.PlusIcon}
         />
+
+        <div className="profile">
+          <Badge className="badge" badgeContent={2} color="primary">
+            <i className="mail">{icon.MailIcon}</i>
+          </Badge>
+
+          <Badge className="badge" badgeContent={0} color="primary">
+            <i className="bell">{icon.BellIcon}</i>
+          </Badge>
+
+          <Avatar sx={{ width: 30, height: 30 }} />
+        </div>
 
         <div className="MenuItems">
           <MenuItem icon={icon.HomeIcon} name="Dashboard" />

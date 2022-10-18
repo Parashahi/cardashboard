@@ -1,13 +1,39 @@
 @import "../../App.scss";
+// @import "./NavbarStyle.scss";
 
 .sideNav{
-    width: 16%;
-    padding: 30px 0;
+    // background: white;
+    min-width: 16%;
+    padding: 30px 0 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    // transition: all 0.3s linear;
 
     .UpperMenu{
+
+        .profile{
+            display: none;
+            justify-content: center;
+            // display: flex;
+            gap: 20px;
+            padding: 15px 0 0;
+            
+            .badge{
+                cursor: pointer;
+                margin: 6px 0px 0 0;
+                font-size: 20px;
+    
+                span{
+                    top: 4px;
+                }
+    
+            }
+            .bell{
+                font-size: 20px;
+                // padding-top: 5px ;
+            }
+        }
 
            
         .MenuItems{
@@ -21,3 +47,34 @@
         }
     }
  }
+
+ @media screen and (max-width: 1100px ){
+
+    .sideNav{
+        position: fixed;
+        right: -280px;
+        top: 55px;
+        transition: right .2s ease-in-out;
+        padding: 20px;
+        background: white;
+        border-right: 1px solid #f2f2f0;
+        z-index: 999;
+        width: 260px;
+
+        .UpperMenu{
+
+            // button{
+            //     display: none;
+            // }
+
+            .profile{
+                display: flex;
+            }
+        }
+     }
+
+     .sideNav.active{
+        right: 55px;
+     }
+
+}

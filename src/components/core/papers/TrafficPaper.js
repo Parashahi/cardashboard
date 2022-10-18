@@ -7,7 +7,7 @@ function TrafficPaper() {
     border-radius: 5px;
     border: 1px solid lightgrey;
     padding: 20px;
-    width: 30%;
+    min-width: 29%;
 
     .head {
       margin-bottom: 5px;

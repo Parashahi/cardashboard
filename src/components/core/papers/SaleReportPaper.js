@@ -12,101 +12,205 @@ import img from "../../../assets/images/Index";
 
 function SaleReportPaper() {
   const SalesReport = styledComponents.div`
-    background: white;
-    border: 1px solid lightgrey;
-    border-radius: 5px;
-    width: 70%;
-    padding: 20px;
 
-    .head {
-      align-items: center;
-      height: 30px;
+  background: white;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding: 20px;
+
+  .head {
+    align-items: center;
+    height: 30px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    p {
+      font-weight: bold;
+      font-size: 16px;
+      ${"" /* padding: 5px 20px 0 0; */}
+    }
+
+    .radioGroup {
+      height: 25px;
       display: flex;
-      width: 100%;
-      justify-content: space-between;
+      gap: 5px;
+      align-items: center;
 
-      p {
-        font-weight: bold;
-        font-size: 16px;
-        ${"" /* padding: 5px 20px 0 0; */}
+      .radioBtn {
+        height: inherit;
+        position: relative;
+        text-align: center;
+        font-size: 11px;
+        font-weight: 600;
+        color: grey;
+
+        input {
+          opacity: 0;
+          width: 75px;
+          height: inherit;
+
+          &:hover + .selected {
+            border: 1px solid lightgrey;
+            border-radius: 5px;
+            padding: 5px 0;
+            top: 0px;
+            left: 0;
+          }
+
+          &:checked + .selected {
+            border: 1px solid lightgrey;
+            border-radius: 5px;
+            padding: 5px 0;
+            top: 0px;
+            color: black;
+          }
+        }
+        .selected {
+          padding: 5px 0;
+          width: 100%;
+          position: absolute;
+          left: 0;
+          top: 1px;
+        }
+      }
+    }
+
+    button {
+      font-size: 11px;
+      font-weight: 600;
+    }
+  }
+
+  .chart {
+    position: relative;
+    width: 100%;
+
+    .lines {
+      width: 100%;
+      margin: 32px 0 0px;
+      height: 1px;
+      background: lightgrey;
+    }
+
+    img {
+      position: absolute;
+      top: -27px;
+      width: 100%;
+      height: 160px;
+    }
+
+    ul {
+      margin: 8px 0;
+      font-size: 11px;
+      color: grey;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  @media screen and (max-width: 1280px){
+    .head {
+      
+      .radioGroup {
+       
+        .radioBtn {
+       
+          input {
+            width: 60px;
+          }
+        }
+      }   
+    }
+  }
+
+  @media screen and (max-width: 740px ){
+    .head {
+
+      p{
+        font-size: 14px;
       }
       .radioGroup {
-        height: 25px;
-        display: flex;
-        gap: 5px;
-        align-items: center;
 
         .radioBtn {
-          height: inherit;
-          position: relative;
-          text-align: center;
-          font-size: 11px;
-          font-weight: 600;
-          color: grey;
-
+        
           input {
-            opacity: 0;
-            width: 80px;
-            height: inherit;
+            width: 60px;
+          
+          }
+        }
+      }   
+    }
+  }
+
+  @media screen and (max-width: 570px ){
+    .head {
+      align-items: center;
+      height: 60px;
+      position: relative;
+      
+      .radioGroup { 
+        position: absolute;
+        top: 0;
+        left: 133px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+
+        .radioBtn {
+          
+          input {          
 
             &:hover + .selected {
-              border: 1px solid lightgrey;
-              border-radius: 5px;
-              padding: 6px 0 5px;
-              top: 0px;
-              left: 0;
+              padding: 5px 0;
+              
             }
 
             &:checked + .selected {
-              border: 1px solid lightgrey;
-              border-radius: 5px;
-              padding: 6px 0 5px;
-              top: 0px;
-              color: black;
+              padding: 5px 0
             }
           }
           .selected {
-            padding: 6px 0 5px;
-            width: 100%;
-            position: absolute;
-            left: 0;
-            top: 1px;
+            padding: 5px 0;
+          
+          
           }
-        }
-      }
-
-      button {
-        font-size: 11px;
-        font-weight: 600;
+        }   
       }
     }
+  }
 
-    .chart {
-      position: relative;
-      width: 100%;
+  @media screen and (max-width: 460px ){
+    .head {
 
-      .lines {
-        width: 100%;
-        margin: 32px 0 0px;
-        height: 1px;
-        background: lightgrey;
+      p{
+        font-size: 12px;
       }
 
-      img {
-        position: absolute;
-        top: -27px;
-        width: 100%;
-        height: 160px;
-      }
+      .radioGroup { 
+        left: 95px;
+       
 
-      ul {
-        margin: 8px 0;
-        font-size: 11px;
-        color: grey;
-        display: flex;
-        justify-content: space-between;
+        .radioBtn {
+          
+          input {    
+            width: 55px;      
+
+          }
+          
+          .selected {
+            font-size: 10px;
+          }
+        }   
       }
+      
+      button{
+        font-size: 10px;
+        width: 60px;
+      }   
     }
+  }
+   
   `;
   return (
     <SalesReport>

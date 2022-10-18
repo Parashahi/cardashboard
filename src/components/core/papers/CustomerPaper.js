@@ -13,7 +13,7 @@ function CustomerPaper() {
     border: 1px solid lightgrey;
     border-radius: 5px;
     padding: 20px;
-    width: 30%;
+    min-width: 29%;
 
     .title {
       font-size: 16px;
@@ -23,7 +23,7 @@ function CustomerPaper() {
     .titleText {
       font-size: 13px;
       color: grey;
-      padding: 5px 0 20px;
+      padding: 5px 0 15px;
     }
 
     button {
@@ -34,7 +34,7 @@ function CustomerPaper() {
       font-size: 10px;
       border: none;
       background: transparent;
-      padding: 10px 10px 0px 0px;
+      padding: 15px 10px 0px 0px;
       display: flex;
 
       &:hover {

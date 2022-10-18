@@ -5,7 +5,7 @@ function TodayDetailsPaper(props) {
   const TodayPaper = styledComponents.div`
     border: 1px solid lightgrey;
     border-radius: 6px;
-    width: 230px;
+    // min-width: 230px;
     background: white;
     padding: 15px;
 

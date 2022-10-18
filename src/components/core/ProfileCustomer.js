@@ -8,8 +8,9 @@ import styledComponents from "styled-components";
 function ProfileCustomer(props) {
   const Profile = styledComponents.div`
         display: flex;
-        gap: 10px;
-        width: 100%;
+
+        gap: 15px;
+        min-width: 100%;
         font-size: 11px;
         cursor: pointer;
         padding: 10px 0;
@@ -28,11 +29,30 @@ function ProfileCustomer(props) {
             display: flex;
             justify-content: space-between;
 
+            .info{
+              width: 70%;
+              word-break: break-all;
+            }
+
             .price{
                 text-align: right;
         
             }
         }
+
+        @media screen and (max-width: 1280px ){
+         
+  
+  
+          .fullDetails{
+
+              // .info{
+              //   word-break: break-all;
+              //   width: 60%;
+              // }
+  
+          }
+      }
 
 
     `;

@@ -1,37 +1,129 @@
 @import "../../App.scss";
 
-.MainContent{
-    margin: 30px 0;
-    width: 85%;
 
-    .TodaysDetails{
+
+    .MainContent{
+        margin: 30px 0;
+        min-width: 80.5%;
     
-        p{
-            font-size: 16px;
-            color: grey;
-
-            span{
-                font-weight: 700;
-                color: black;
+        .TodaysDetails{
+            width: 100%;
+        
+            p{
+                font-size: 16px;
+                color: grey;
+    
+                span{
+                    font-weight: 700;
+                    color: black;
+                }
+            }
+    
+            .PapersMain{
+                margin: 30px 0;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 20px;
+                flex-wrap: wrap;
+                justify-content: space-between;
             }
         }
-
-        .PapersMain{
+    
+        .MidSection{
             margin: 30px 0;
-            display: flex;
-            justify-content: space-between;
+            display: grid;
+            grid-template-columns: 65% 32%;
+            gap: 30px;
+        }
+        .LastSection{
+            display: grid;
+            grid-template-columns: 65% 32%;
+            gap: 30px;
         }
     }
 
-    .MidSection{
-        height: 260px;
-        margin: 30px 0;
-        display: flex;
-        gap: 30px;
-    }
-    .LastSection{
+    @media screen and (max-width: 1280px){
+        .MainContent{
+            margin: 30px 0;
+            min-width: 80%;
         
-        display: flex;
-        gap: 30px;
+            .TodaysDetails{
+            
+                p{
+                    font-size: 16px;
+                    color: grey;
+        
+                    span{
+                        font-weight: 700;
+                        color: black;
+                    }
+                }
+        
+                .PapersMain{
+                    margin: 30px 0;
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    gap: 20px;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                }
+            }
+        
+            .MidSection{
+                margin: 30px 0;
+                display: grid;
+                grid-template-columns: 63% 33.5%;
+                gap: 30px;
+            }
+            .LastSection{
+                display: grid;
+                grid-template-columns: 63% 33.5%;
+                gap: 30px;
+            }
+        }
     }
-}
+
+
+    @media screen and (max-width: 920px ){
+        .MainContent{
+            min-width: 100%;
+        
+            .TodaysDetails{
+            
+        
+                .PapersMain{
+                    grid-template-columns: repeat(2, 1fr);
+                
+                }
+            }
+        
+            .MidSection{
+                margin: 30px 0;
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+            }
+            .LastSection{
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+            }
+        }
+    }
+
+
+    @media screen and (max-width: 570px) {
+        .MainContent{
+        
+        
+            .TodaysDetails{
+            
+        
+                .PapersMain{
+                    grid-template-columns: repeat(1, 1fr);
+                
+                }
+            }
+        
+        }
+    }

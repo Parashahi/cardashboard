@@ -8,12 +8,22 @@ import SideNav from "../layouts/SideNav";
 function HomeMain() {
   const Home = styledComponents.section`
     background: #fafafa;
-    width: 100%;
+    max-width: 100%;
 
     .HomeMain {
       display: flex;
       gap: 40px;
     }
+
+    @media screen and (max-width: 1100px ){
+      .HomeMain {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        // transition: all 0.3s linear;
+      }
+    }
+
   `;
   return (
     <Home>

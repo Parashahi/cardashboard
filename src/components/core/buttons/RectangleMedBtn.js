@@ -3,7 +3,7 @@ import styledComponents from "styled-components";
 
 function RectangleMedBtn(props) {
   const Button = styledComponents.button`
-    padding: 6px 5px 5px;
+    padding: 5px 5px ;
     border-radius: 5px;
     border: 1px solid grey;
     background: ${props.bgColor};

@@ -10,13 +10,13 @@ function TransactionPaper() {
     background: white;
     border: 1px solid lightgrey;
     border-radius: 5px;
-    width: 70%;
+    min-width: 68%;
     padding: 20px 0 0;
 
     .head {
       display: flex;
       justify-content: space-between;
-      padding: 0 20px 10px;
+      padding: 0 20px 15px;
 
       p {
         color: black;
@@ -52,6 +52,20 @@ function TransactionPaper() {
         }
       }
     }
+
+    @media screen and (max-width: 460px ){
+
+      .head {
+        button {
+          svg {
+            font-size: 20px;
+            padding: 7px 0 0 0px;
+          }
+        }
+      }
+    }
+
+
   `;
   return (
     <TransactionPaper>

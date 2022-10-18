@@ -4,10 +4,10 @@ import React from "react";
 function RectangleBigBtn(props) {
   const Button = styledComponents.button`
     ${"" /* height: 36px; */}
-    width: 100%;
+    min-width: 100%;
     font-size: 12px;
     font-weight: 600;
-    padding: 12px 0;
+    padding: 12px 10px;
     border: none;
     border-radius: 10px;
     background: ${props.bgcolor};
