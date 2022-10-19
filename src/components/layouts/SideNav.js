@@ -17,7 +17,7 @@ import Avatar from "@mui/material/Avatar";
 function SideNav() {
   return (
     <section className="sideNav">
-      <div className="UpperMenu">
+      <div className="upperMenu">
         <RectangleBigBtn
           bgcolor="#4f46e5"
           color="white"
@@ -37,7 +37,7 @@ function SideNav() {
           <Avatar sx={{ width: 30, height: 30 }} />
         </div>
 
-        <div className="MenuItems">
+        <div className="menuItems">
           <MenuItem icon={icon.HomeIcon} name="Dashboard" />
           <p>ANALYTICS</p>
           <MenuItem icon={icon.BarGraphIcon} name="Performance" />
@@ -53,7 +53,7 @@ function SideNav() {
         </div>
       </div>
 
-      <div className="LowerMenu">
+      <div className="lowerMenu">
         <MenuItem icon={icon.SettingIcon} name="Settings" />
         <MenuItem icon={icon.LogoutIcon} name="Logout" />
       </div>

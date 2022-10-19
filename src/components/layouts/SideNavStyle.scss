@@ -2,15 +2,14 @@
 // @import "./NavbarStyle.scss";
 
 .sideNav{
-    // background: white;
     min-width: 16%;
+    height: 700px;
     padding: 30px 0 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    // transition: all 0.3s linear;
 
-    .UpperMenu{
+    .upperMenu{
 
         .profile{
             display: none;
@@ -36,7 +35,7 @@
         }
 
            
-        .MenuItems{
+        .menuItems{
             padding: 20px 0 0;
 
             p{
@@ -61,7 +60,7 @@
         z-index: 999;
         width: 260px;
 
-        .UpperMenu{
+        .upperMenu{
 
             // button{
             //     display: none;
@@ -74,7 +73,7 @@
      }
 
      .sideNav.active{
-        right: 55px;
+        right: 0px;
      }
 
 }

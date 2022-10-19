@@ -2,11 +2,11 @@
 
 
 
-    .MainContent{
+    .mainContent{
         margin: 30px 0;
         min-width: 80.5%;
     
-        .TodaysDetails{
+        .todaysDetails{
             width: 100%;
         
             p{
@@ -19,7 +19,7 @@
                 }
             }
     
-            .PapersMain{
+            .papersMain{
                 margin: 30px 0;
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);
@@ -29,13 +29,13 @@
             }
         }
     
-        .MidSection{
+        .midSection{
             margin: 30px 0;
             display: grid;
             grid-template-columns: 65% 32%;
             gap: 30px;
         }
-        .LastSection{
+        .lastSection{
             display: grid;
             grid-template-columns: 65% 32%;
             gap: 30px;
@@ -43,11 +43,11 @@
     }
 
     @media screen and (max-width: 1280px){
-        .MainContent{
+        .mainContent{
             margin: 30px 0;
             min-width: 80%;
         
-            .TodaysDetails{
+            .todaysDetails{
             
                 p{
                     font-size: 16px;
@@ -59,7 +59,7 @@
                     }
                 }
         
-                .PapersMain{
+                .papersMain{
                     margin: 30px 0;
                     display: grid;
                     grid-template-columns: repeat(4, 1fr);
@@ -69,13 +69,13 @@
                 }
             }
         
-            .MidSection{
+            .midSection{
                 margin: 30px 0;
                 display: grid;
                 grid-template-columns: 63% 33.5%;
                 gap: 30px;
             }
-            .LastSection{
+            .lastSection{
                 display: grid;
                 grid-template-columns: 63% 33.5%;
                 gap: 30px;
@@ -85,25 +85,25 @@
 
 
     @media screen and (max-width: 920px ){
-        .MainContent{
+        .mainContent{
             min-width: 100%;
         
-            .TodaysDetails{
+            .todaysDetails{
             
         
-                .PapersMain{
+                .papersMain{
                     grid-template-columns: repeat(2, 1fr);
                 
                 }
             }
         
-            .MidSection{
+            .midSection{
                 margin: 30px 0;
                 display: flex;
                 flex-direction: column;
                 gap: 30px;
             }
-            .LastSection{
+            .lastSection{
                 display: flex;
                 flex-direction: column;
                 gap: 30px;
@@ -113,13 +113,13 @@
 
 
     @media screen and (max-width: 570px) {
-        .MainContent{
+        .mainContent{
         
         
-            .TodaysDetails{
+            .todaysDetails{
             
         
-                .PapersMain{
+                .papersMain{
                     grid-template-columns: repeat(1, 1fr);
                 
                 }

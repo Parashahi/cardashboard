@@ -1,5 +1,4 @@
 import React from "react";
-import styledComponents from "styled-components";
 
 //components
 import ProfileCustomer from "../../core/ProfileCustomer";
@@ -7,52 +6,12 @@ import ProfileCustomer from "../../core/ProfileCustomer";
 //icons
 import icon from "../../../assets/icons/Index";
 
+//style
+import { CustPaper } from "../../../assets/Style";
+
 function CustomerPaper() {
-  const CustomerPaper = styledComponents.div`
-    background: white;
-    border: 1px solid lightgrey;
-    border-radius: 5px;
-    padding: 20px;
-    min-width: 29%;
-
-    .title {
-      font-size: 16px;
-      font-weight: 600;
-    }
-
-    .titleText {
-      font-size: 13px;
-      color: grey;
-      padding: 5px 0 15px;
-    }
-
-    button {
-      color: grey;
-      display: inline-block;
-      text-transform: uppercase;
-      cursor: pointer;
-      font-size: 10px;
-      border: none;
-      background: transparent;
-      padding: 15px 10px 0px 0px;
-      display: flex;
-
-      &:hover {
-        color: black;
-      }
-
-      span {
-        padding: 1px 0 0;
-      }
-
-      svg {
-        font-size: 14px;
-        padding: 0 0 0 5px;
-      }
-    }
-  `;
   return (
-    <CustomerPaper>
+    <CustPaper>
       <p className="title">Recent Customers</p>
       <p className="titleText">lorenianidono</p>
 
@@ -85,7 +44,7 @@ function CustomerPaper() {
         <span>See all customers</span>
         {icon.RightArrowIcon}
       </button>
-    </CustomerPaper>
+    </CustPaper>
   );
 }
 

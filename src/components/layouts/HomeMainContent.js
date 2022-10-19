@@ -17,14 +17,14 @@ import TransactionPaper from "../core/papers/TransactionPaper";
 
 function HomeMainContent() {
   return (
-    <section className="MainContent">
-      <div className="TodaysDetails">
+    <section className="mainContent">
+      <div className="todaysDetails">
         <p>
           <span>Hey Parash - </span> here's what happening with your store
           today.
         </p>
 
-        <div className="PapersMain">
+        <div className="papersMain">
           <TodayDetailsPaper
             title="TODAY'S SALE"
             amnt="$12,000"
@@ -59,12 +59,12 @@ function HomeMainContent() {
         </div>
       </div>
 
-      <div className="MidSection">
+      <div className="midSection">
         <SaleReportPaper />
         <TrafficPaper />
       </div>
 
-      <div className="LastSection">
+      <div className="lastSection">
         <TransactionPaper />
         <CustomerPaper />
       </div>
