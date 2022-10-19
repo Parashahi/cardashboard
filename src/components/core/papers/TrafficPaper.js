@@ -1,74 +1,10 @@
 import React from "react";
-import styled from "styled-components";
+
+import { TraffPaper } from "../../../assets/Style";
 
 function TrafficPaper() {
-  const TrafficPaper = styled.div`
-    background: white;
-    border-radius: 5px;
-    border: 1px solid lightgrey;
-    padding: 20px;
-    width: 30%;
-
-    .head {
-      margin-bottom: 10px;
-      display: flex;
-      justify-content: space-between;
-
-      h1 {
-        font-size: 13px;
-      }
-
-      select {
-        font-size: 10px;
-        outline: none;
-        border: none;
-        background: transparent;
-
-        option {
-          outiline: none;
-        }
-      }
-    }
-    .barTitle {
-      font-size: 10px;
-      font-weight: 400;
-      padding: 20px 0 10px;
-      display: flex;
-      justify-content: space-between;
-    }
-    .bar {
-      width: 100%;
-      background: lightgrey;
-      height: 5px;
-      border-radius: 5px;
-      position: relative;
-
-      div {
-        position: absolute;
-        background: #4f46e5;
-        height: 5px;
-        border-radius: 5px;
-      }
-
-      .progress1 {
-        width: 80%;
-      }
-
-      .progress2 {
-        width: 60%;
-      }
-
-      .progress3 {
-        width: 40%;
-      }
-
-      .progress4 {
-        width: 20%;
-      }
-    }
-  `;
   return (
-    <TrafficPaper>
+    <TraffPaper>
       <div className="head">
         <h1>Traffic Sources</h1>
         <select>
@@ -113,7 +49,7 @@ function TrafficPaper() {
       <div className="bar">
         <div className="progress4"></div>
       </div>
-    </TrafficPaper>
+    </TraffPaper>
   );
 }
 

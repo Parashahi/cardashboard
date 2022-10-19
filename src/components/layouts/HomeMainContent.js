@@ -17,14 +17,14 @@ import TransactionPaper from "../core/papers/TransactionPaper";
 
 function HomeMainContent() {
   return (
-    <section className="MainContent">
-      <div className="TodaysDetails">
+    <section className="mainContent">
+      <div className="todaysDetails">
         <p>
           <span>Hey Parash - </span> here's what happening with your store
           today.
         </p>
 
-        <div className="PapersMain">
+        <div className="papersMain">
           <TodayDetailsPaper
             title="TODAY'S SALE"
             amnt="$12,000"
@@ -43,7 +43,7 @@ function HomeMainContent() {
 
           <TodayDetailsPaper
             title="TOTAL ORDERS"
-            amnt="$84,233"
+            amnt="84,233"
             num="+3.25%"
             numIcon={icon.UpArrowIcon}
             color="#3AF90B"
@@ -51,7 +51,7 @@ function HomeMainContent() {
 
           <TodayDetailsPaper
             title="TOTAL CUSTOMERS"
-            amnt="$33,889"
+            amnt="33,889"
             num="-3.25%"
             numIcon={icon.DownArrowIcon}
             color="red"
@@ -59,12 +59,12 @@ function HomeMainContent() {
         </div>
       </div>
 
-      <div className="MidSection">
+      <div className="midSection">
         <SaleReportPaper />
         <TrafficPaper />
       </div>
 
-      <div className="LastSection">
+      <div className="lastSection">
         <TransactionPaper />
         <CustomerPaper />
       </div>

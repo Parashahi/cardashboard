@@ -1,25 +1,12 @@
 import React from "react";
-import styled from "styled-components";
+import { RectMedBtn } from "../../../assets/Style";
 
 function RectangleMedBtn(props) {
-  const Button = styled.button`
-    padding: 6px 5px 5px;
-    border-radius: 5px;
-    border: 1px solid grey;
-    background: ${props.bgColor};
-    color: ${props.color};
-    display: flex;
-    cursor: pointer;
-
-    span {
-      padding: 1px 3px 0 0;
-    }
-  `;
   return (
-    <Button>
+    <RectMedBtn bgcolor={props.bgColor} color={props.color}>
       <span>{props.icon}</span>
       {props.name}
-    </Button>
+    </RectMedBtn>
   );
 }
 

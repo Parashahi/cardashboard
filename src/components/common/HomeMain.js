@@ -1,20 +1,12 @@
 import React from "react";
-import styled from "styled-components";
 
 //Layouts
 import HomeMainContent from "../layouts/HomeMainContent";
 import SideNav from "../layouts/SideNav";
 
-function HomeMain() {
-  const Home = styled.section`
-    background: #fafafa;
-    width: 100%;
+import { Home } from "../../assets/Style";
 
-    .HomeMain {
-      display: flex;
-      gap: 40px;
-    }
-  `;
+function HomeMain() {
   return (
     <Home>
       <div className="container">

@@ -10,10 +10,14 @@ import RectangleBigBtn from "../core/buttons/RectangleBigBtn";
 //Icons
 import icon from "../../assets/icons/Index";
 
+//Material UI
+import { Badge } from "@mui/material";
+import Avatar from "@mui/material/Avatar";
+
 function SideNav() {
   return (
     <section className="sideNav">
-      <div className="UpperMenu">
+      <div className="upperMenu">
         <RectangleBigBtn
           bgcolor="#4f46e5"
           color="white"
@@ -21,7 +25,19 @@ function SideNav() {
           icon={icon.PlusIcon}
         />
 
-        <div className="MenuItems">
+        <div className="profile">
+          <Badge className="badge" badgeContent={2} color="primary">
+            <i className="mail">{icon.MailIcon}</i>
+          </Badge>
+
+          <Badge className="badge" badgeContent={0} color="primary">
+            <i className="bell">{icon.BellIcon}</i>
+          </Badge>
+
+          <Avatar sx={{ width: 30, height: 30 }} />
+        </div>
+
+        <div className="menuItems">
           <MenuItem icon={icon.HomeIcon} name="Dashboard" />
           <p>ANALYTICS</p>
           <MenuItem icon={icon.BarGraphIcon} name="Performance" />
@@ -37,7 +53,7 @@ function SideNav() {
         </div>
       </div>
 
-      <div className="LowerMenu">
+      <div className="lowerMenu">
         <MenuItem icon={icon.SettingIcon} name="Settings" />
         <MenuItem icon={icon.LogoutIcon} name="Logout" />
       </div>

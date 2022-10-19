@@ -24,6 +24,15 @@ function Navbar() {
         <input placeholder="Type to Search" />
       </div>
 
+      <button
+        className="menubar"
+        onClick={() =>
+          document.querySelector(".sideNav").classList.toggle("active")
+        }
+      >
+        {icon.BarsIcon}
+      </button>
+
       <div className="profile">
         <Badge className="badge" badgeContent={2} color="primary">
           <i className="mail">{icon.MailIcon}</i>

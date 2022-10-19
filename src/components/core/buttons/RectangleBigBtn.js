@@ -1,33 +1,13 @@
-import styled from "styled-components";
 import React from "react";
 
+import { RectBigBtn } from "../../../assets/Style";
+
 function RectangleBigBtn(props) {
-  const Button = styled.button`
-    ${"" /* height: 36px; */}
-    width: 100%;
-    font-size: 12px;
-    font-weight: 600;
-    padding: 12px 25px 10px;
-    border: none;
-    border-radius: 10px;
-    background: ${props.bgcolor};
-    color: ${props.color};
-    display: flex;
-    cursor: pointer;
-
-    span {
-      padding: 1px 5px 0 0;
-    }
-
-    &:hover {
-      background: blue;
-    }
-  `;
   return (
-    <Button>
-      <span>{props.icon}</span>
+    <RectBigBtn bgcolor={props.bgcolor} color={props.color}>
+      {props.icon}
       {props.name}
-    </Button>
+    </RectBigBtn>
   );
 }
 

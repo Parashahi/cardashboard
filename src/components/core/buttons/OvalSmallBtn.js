@@ -1,31 +1,13 @@
-import styled from "styled-components";
 import React from "react";
 
-function OvalSmallBtn(props) {
-  const Button = styled.button`
-    text-transform: capitalize;
-    font-size: 10px;
-    border-radius: 20px;
-    border: none;
-    padding: 4px 8px;
-    background: ${props.bColor};
-    color: ${props.fColor};
-    cursor: pointer;
-    display: flex;
+import { OvalSmBtn } from "../../../assets/Style";
 
-    .dot {
-      margin: 4px 5px 0 0;
-      background: ${props.fColor};
-      height: 5px;
-      width: 5px;
-      border-radius: 50%;
-    }
-  `;
+function OvalSmallBtn(props) {
   return (
-    <Button>
+    <OvalSmBtn bColor={props.bgcolor} fColor={props.fcolor}>
       <div className="dot"></div>
       {props.name}
-    </Button>
+    </OvalSmBtn>
   );
 }
 
